@@ -40,8 +40,8 @@ def tic_tac_toe():
         print_board(board)
         try:
             # Get player input
-            row = int(input(f"Player {player}, enter row (0, 1, or 2): "))
-            col = int(input(f"Player {player}, enter column (0, 1, or 2): "))
+            row = int(input("Player {player}, enter row (0, 1, or 2): "))
+            col = int(input("Player {player}, enter column (0, 1, or 2): "))
 
             # Validate input
             if row < 0 or row > 2 or col < 0 or col > 2:
@@ -58,7 +58,7 @@ def tic_tac_toe():
             winner = check_winner(board)
             if winner:
                 print_board(board)
-                print(f"Player {winner} wins!")
+                print("Player {winner} wins!")
                 break
 
             # Check for a tie
